@@ -1,0 +1,53 @@
+.container {
+	padding: 20px;
+}
+
+#calcWrapper {
+	background-color: #e6e6e6;
+	padding: 10px;
+	width: 400px;
+	height: 500px;
+	-webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+       -moz-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+            box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+}
+
+#screen {
+	background-color: #D2FCFF;
+	width: 100%;
+	height: 5em;
+	-webkit-box-shadow: inset 0 1px 1px 0 rgba(0,0,0,0.16), inset 0 0 0 1px rgba(0,0,0,0.08);
+       -moz-box-shadow: inset 0 1px 1px 0 rgba(0,0,0,0.16), inset 0 0 0 1px rgba(0,0,0,0.08);
+			box-shadow: inset 0 1px 1px 0 rgba(0,0,0,0.16), inset 0 0 0 1px rgba(0,0,0,0.08);
+}
+
+#buttons {
+	width: 100%;
+}
+
+#numbers {
+	width: 80%;
+	display: inline-block;
+}
+
+#operators {
+	width: 18%;
+	display: inline-block;
+}
+
+#buttons button {
+	padding: 10px;
+	margin: 0 1px;
+	border-width: 2px;
+    border-style: outset;
+    border-color: buttonface;
+    border-image: initial;
+}
+
+#numbers button {
+	width: 30%;
+}
+
+#operators button {
+	width: 100%;
+}
