@@ -1,0 +1,7 @@
+# .gitignore
+ 
+# Executable files
+*.exe
+
+# temp sub-directory (ended with a directory separator)
+temp/
