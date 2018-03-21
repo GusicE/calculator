@@ -3,9 +3,13 @@
 class Button {
 
 	constructor(Text, Wrapper) {
-		this.text = Text;
+		this.value = Text;
 		this.wrapper = Wrapper;
 	}
+
+		getValue() {
+			return this.value;
+		}
 
 		createBtn() {
 			this.element = document.createElement("button");
@@ -32,13 +36,45 @@ class Button {
 // Screen class /////////////////////////////////////////////////////////////
 class Screen {
 
+	constructor(id) {
+		this.screen = document.getElementById(id);
+	}
+
+	showValue(value) {
+		this.element.textContent += this.text
+	}
+
 }
 
 // Calculator class /////////////////////////////////////////////////////////
 {
+	createScreen(){
+		let display = new Screen('screen');
+	};
+
+	createButtons(arr) {
+		let buttons = arr
+
+		buttons.forEach(function(element) {
+			element = new Button(element, 'numbers');
+		}
+	};
+
+	createOperators(arr) {
+		let operators = arr;
+
+		operators.forEach(function(element) {
+			element = new Button(element, 'operators');
+		}
+	};
+
 	class Calculator {
 
-	}
+		constructor(){
+			this.display = createDisplay();
+			this.array_buttons = createButtons();
+			this.array_operators = createOperators();	
+		}
 }
 
 // Main function ////////////////////////////////////////////////////////////
