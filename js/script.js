@@ -289,8 +289,14 @@ class Screen {
 			this.calcDone = false;
 		}
 
-		info() {
-			alert("WEB CALCULATOR v0.9\nEdin Gusic 2018");
+		info() {		
+			swal({
+			  title: "Web Calculator v1.0",
+			  text: "by Edin Gusic - 2018",
+			  icon: "info",
+			  button: false,
+			  animation: false
+			});
 		}		
 
 		debug() {
